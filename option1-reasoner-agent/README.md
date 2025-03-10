@@ -27,6 +27,8 @@ pip install -e .
 ### 2. Install Dependencies for ReasonerAgent
 
 ```bash
+pip install playwright
+playwright install
 pip install -r requirements.txt
 ```
 ---
