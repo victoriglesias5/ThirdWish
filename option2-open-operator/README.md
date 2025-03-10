@@ -16,7 +16,7 @@ This primarily affects the usage of the OpenAI SDK, as the original implementati
 
 Go to this path:
 ```bash
-open-operator/api/agent/route.ts
+cd open-operator/api/agent
 ```
 
 
