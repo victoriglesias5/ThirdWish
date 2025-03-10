@@ -45,7 +45,7 @@ Additionally, we provide a correctly configured `.env.local` file to work with A
 2. Replace the following files with the versions from this repository:
    - `.env.local`
    - `route.ts` (located in `open-operator\app\api\agent`)
-3. Fill in your Azure credentials in the `.env.local` file.
+3. Fill in your Azure and Browserbase credentials in the `.env.local` file.
 
 ---
 
