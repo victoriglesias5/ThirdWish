@@ -72,7 +72,6 @@ After configuring the settings, run a test query to verify the agent's functiona
 ```bash
 python main.py test_job --query "Who is the president of the USA?" --api_key "your-azure-api-key" --model "gpt-4o"
 ```
-👉 [example.py](example.py)
 
 ---
 
