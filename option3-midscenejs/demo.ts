@@ -22,27 +22,27 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
   // Inicializa el agente de Midscene
   const agent = new PuppeteerAgent(page);
 
-  // Paso 1: En "Type of transaction", escribe "New Application" y pulsa Enter
+  // Paso 1
   await agent.aiAction('In the "Type of transaction" field, type "New Application" and press Enter');
   await sleep(5000);
 
-  // Paso 2: En "Office of origin", busca y selecciona "Madrid"
+  // Paso 2
   await agent.aiAction('In the "Office of origin" field, search for "Philippines" and select it');
   await sleep(5000);
 
-  // Paso 3: En "Número de clases", escribe "10" y pulsa Enter
+  // Paso 3
   await agent.aiAction('In the "Número de clases" field, type "10" and press Enter');
   await sleep(5000);
 
-  // Paso 4: En "Search contracting parties", escribe "Spain" y selecciona el recuadro correspondiente
+  // Paso 4
   await agent.aiAction('In the "Search contracting parties" field, type "Spain" and select the highlighted option');
   await sleep(5000);
 
-  // Paso 5: Haz clic en el botón "Calculate fee"
+  // Paso 5
   await agent.aiAction('Click the "Calculate fee" button');
   await sleep(5000);
 
-  // Paso 6: Extraer el resultado de la tarifa
+  // Paso 6
   const feeResult = await agent.aiQuery(
     '{ fee: string }, extract the calculated fee displayed on the page'
   );
