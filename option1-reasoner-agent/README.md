@@ -22,6 +22,7 @@ This implementation is a practical adaptation of **one** of the many examples pr
 git clone https://github.com/maitrix-org/llm-reasoners.git
 cd llm-reasoners
 pip install -e .
+```bash
 
 ### 2. Install Dependencies for ReasonerAgent
 
