@@ -35,7 +35,7 @@ Additionally, we provide a correctly configured `.env.local` file to work with A
   Contains the environment variables configured for Azure OpenAI.
 - `route.ts`  
   Contains the modified API logic to make requests to Azure OpenAI.  
-  ⚠️ **Replace the original `route.ts` located at `C:\ThirdWish\Open-Operator\open-operator\app\api\agent` with this one.**
+  ⚠️ **Replace the original `route.ts` located at `open-operator\app\api\agent` with this one.**
 
 ---
 
