@@ -61,9 +61,6 @@ By default, the ReasonerAgent from Maitrix.org uses the OpenAI API directly. Thi
 
 3.  **Configure Azure Credentials:**
     * Ensure your Azure OpenAI credentials are correctly set in your environment variables.
-    * See `credentials.txt` for a sample credentials file.
-
-    👉 [credentials.txt](../credentials.txt)
 
 ---
 
