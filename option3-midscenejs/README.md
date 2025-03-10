@@ -53,13 +53,26 @@ Even if your Azure credentials specify API version `2024-05-01`, you **must** ch
 
 ---
 
-## Step 3. Modify `demo.ts`
+## Step 3. Modify `demo.ts` or `demo2.ts`
 
-Edit the `demo.ts` file to define the task you want your AI agent to perform.  
-You can specify interactions such as:
-- Navigating to a web page
-- Extracting data
-- Filling out forms
+This repository includes **two different demo files** for running tasks with Midscene.js:
+
+### `demo.ts`
+- Executes each instruction **step by step**.
+- Waits a set amount of time between each step.
+- Recommended if you need fine control over the execution timing or debugging each action individually.
+
+### `demo2.ts`
+- Provides the **entire process as a single instruction**.
+- Assigns a **total processing time** for the AI agent to complete all tasks at once.
+- Recommended for more autonomous execution with minimal step management.
+
+---
+
+You can modify either file to define the task you want your AI agent to perform, such as:
+- Navigating to a web page  
+- Extracting data  
+- Filling out forms  
 - Validating page content
 
 ---
