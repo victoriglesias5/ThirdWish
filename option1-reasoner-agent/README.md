@@ -80,6 +80,7 @@ python main.py test_job --query "Who is the president of the USA?" --api_key "yo
 ## Gradio Visualization Interface
 
 To simplify the interaction with the ReasonerAgent and visualize its reasoning process, we have implemented two Gradio-based interfaces.
+Both interfaces provide a slider where the user can choose how many steps should the Agen take in order to complete the given task.
 
 1.  **`Agent1.py`**
     * Displays the full execution log of the agent in real-time.
