@@ -31,32 +31,88 @@ pip install -r requirements.txt
 ```
 ---
 
-# Azure OpenAI Integration (Instead of OpenAI API)
+# Azure OpenAI Integration for ReasonerAgent-Web
 
-By default, the official ReasonerAgent uses the **OpenAI API** directly.
-For this project, we have modified the code to work with **Azure OpenAI**.
+This project modifies the official ReasonerAgent to utilize Azure OpenAI instead of the standard OpenAI API.
 
----
+## Overview
 
-## Pasos para Modificar `main.py`
+By default, the ReasonerAgent from Maitrix.org uses the OpenAI API directly. This implementation adapts the code to work with Azure OpenAI, allowing users to leverage Azure's infrastructure and services.
 
-1. **Navega a la carpeta:**
+## Modification Steps for `main.py`
 
-   ```bash
-   cd /content/llm-reasoners/examples/ReasonerAgent-Web/
-   ```
+1.  **Navigate to the Directory:**
+    ```bash
+    cd /content/llm-reasoners/examples/ReasonerAgent-Web/
+    ```
 
-2. **Abre el archivo 'main.py' y localiza el diccionario 'model_info'**.
-
-3. **Reemplaza la configuración de 'gpt-4o' con la siguiente:**
+2.  **Edit `main.py`:**
+    * Open `main.py` and locate the `model_info` dictionary.
+    * Replace or add the `gpt-4o` configuration with the following:
 
     ```python
     'gpt-4o': (
-        os.environ.get("AZURE_API_BASE", "https://thirdwishgroup-ai.openai.azure.com"),  # Azure base
+        os.environ.get("AZURE_API_BASE", "[https://your-azure-openai-resource.openai.azure.com](https://www.google.com/search?q=https://your-azure-openai-resource.openai.azure.com)"),  # Replace with your Azure base URL
         'azure'
     )
-   ```
+    ```
 
-5. **Asegúrate de tener configuradas correctamente tus credenciales de Azure OpenAI.**  
-Puedes consultar el archivo de credenciales de ejemplo aquí:  
-👉 [credentials.txt](#)
+3.  **Configure Azure Credentials:**
+    * Ensure your Azure OpenAI credentials are correctly set in your environment variables.
+    * See `credentials.txt` for a sample credentials file.
+
+    👉 [credentials.txt](credentials.txt)
+
+---
+
+## Quick Test Example
+
+After configuring the settings, run a test query to verify the agent's functionality:
+
+```bash
+python main.py test_job --query "Who is the president of the USA?" --api_key "your-azure-api-key" --model "gpt-4o"
+```
+👉 [example.py](example.py)
+
+---
+
+## Gradio Visualization Interface
+
+To simplify the interaction with the ReasonerAgent and visualize its reasoning process, we have implemented two Gradio-based interfaces.
+
+1.  **`Agent1.py`**
+    * Displays the full execution log of the agent in real-time.
+
+2.  **`Agent2.py`**
+    * Displays the real-time execution log.
+    * Once the process ends, the entire log is summarized using Azure OpenAI, providing a simplified final response.
+
+### Run the Gradio Interfaces
+
+```bash
+python Agent1.py
+```
+
+or
+
+```bash
+python Agent2.py
+```
+
+---
+
+## Notes
+
+This implementation demonstrates the ReasonerAgent applied specifically to the WIPO Madrid Fee Calculator use case.
+
+For further information, advanced configurations, and additional use cases, refer to the official repository documentation:
+
+👉 [ReasonerAgent-Web by Maitrix.org](https://github.com/maitrix-org/llm-reasoners/tree/main/examples/ReasonerAgent-Web)
+
+## Author
+
+Your Name
+
+## Date
+
+YYYY-MM-DD
