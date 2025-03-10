@@ -1,4 +1,4 @@
-# Midscene.js - Puppeteer Integration (Azure OpenAI Edition)
+# Midscene.js - Puppeteer Integration
 
 This repository is an implementation of [Midscene.js](https://github.com/web-infra-dev/midscene) integrated with **Puppeteer** and configured to work with **Azure OpenAI**.
 
@@ -38,7 +38,7 @@ npm install @midscene/web puppeteer tsx --save-dev
 ```
 
 ### Step 2. Set Required API Keys
-The used credentials are available at [../credentials.txt](credentials.txt)
+The used credentials are available at [credentials.txt](../credentials.txt)
 ```bash
 set OPENAI_API_KEY=sk-dummy
 set MIDSCENE_USE_AZURE_OPENAI=1
