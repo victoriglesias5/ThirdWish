@@ -23,20 +23,15 @@ In this repository, you will find the following three browser automation approac
 ### 1. Reasoning Browsing Agent (AllHands.Dev)
 - **Repository**: [`option1-reasoner-agent`](./option1-reasoner-agent)
 - **Description**: A reasoning-based agent that autonomously interacts with web applications.
-- **Pros**: Advanced reasoning, flexible.
-- **Cons**: Potential instability, requires fine-tuning and testing.
+- **Cons**: Potential instability.
 
 ### 2. Open Operator (Browserbase)
 - **Repository**: [`option2-open-operator`](./option2-open-operator)
 - **Description**: A browser automation operator that can perform actions based on predefined workflows.
-- **Pros**: Open-source, adaptable.
-- **Cons**: Still in development, occasional instability.
+- **Cons**: Potential instability.
 
-### 3. UI-TARS (Bytedance)
-- **Repository**: [`option3-ui-tars`](./option3-ui-tars)
-- **Description**: A browser automation framework with reinforcement learning capabilities.
-- **Pros**: Supports training, adaptive to UI changes.
-- **Cons**: Requires significant setup, potential for unstable behavior.
+### 3. Midscene.js
+- **Repository**: [`option3-midscenejs`](./option3-midscenejs)
 
 ---
 
@@ -63,11 +58,6 @@ Each approach was tested under the following conditions:
 - Success rate, execution time, and error handling were measured.
 - System behavior during potential changes in the WIPO calculator interface was observed.
 
----
-
-## Results and Analysis
-
-A complete summary of the tests, results, and comparisons can be found in the `results` folder and the accompanying **project documentation PDF**.
 
 ---
 
