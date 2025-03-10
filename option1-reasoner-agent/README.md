@@ -108,11 +108,3 @@ This implementation demonstrates the ReasonerAgent applied specifically to the W
 For further information, advanced configurations, and additional use cases, refer to the official repository documentation:
 
 👉 [ReasonerAgent-Web by Maitrix.org](https://github.com/maitrix-org/llm-reasoners/tree/main/examples/ReasonerAgent-Web)
-
-## Author
-
-Your Name
-
-## Date
-
-YYYY-MM-DD
