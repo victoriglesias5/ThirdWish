@@ -22,13 +22,13 @@ This implementation is a practical adaptation of **one** of the many examples pr
 git clone https://github.com/maitrix-org/llm-reasoners.git
 cd llm-reasoners
 pip install -e .
-```bash
+```
 
 ### 2. Install Dependencies for ReasonerAgent
 
 ```bash
 pip install -r requirements.txt
-
+```
 ---
 
 # Azure OpenAI Integration (Instead of OpenAI API)
@@ -44,17 +44,19 @@ For this project, we have modified the code to work with **Azure OpenAI**.
 
    ```bash
    cd /content/llm-reasoners/examples/ReasonerAgent-Web/
+   ```
 
 2. **Abre el archivo 'main.py' y localiza el diccionario 'model_info'**.
 
 3. **Reemplaza la configuración de 'gpt-4o' con la siguiente:**
 
-    '''python
+    ```python
     'gpt-4o': (
         os.environ.get("AZURE_API_BASE", "https://thirdwishgroup-ai.openai.azure.com"),  # Azure base
         'azure'
     )
+   ```
 
-4. **Asegúrate de tener configuradas correctamente tus credenciales de Azure OpenAI.**  
+5. **Asegúrate de tener configuradas correctamente tus credenciales de Azure OpenAI.**  
 Puedes consultar el archivo de credenciales de ejemplo aquí:  
 👉 [credentials.txt](#)
