@@ -1,4 +1,4 @@
-# Open Operator - Azure OpenAI Edition
+# Open Operator
 
 This repository is an adaptation of [Open Operator](https://github.com/browserbase/open-operator).
 
@@ -15,9 +15,9 @@ Since we are using **Azure OpenAI** credentials, we have made adjustments to ens
 This primarily affects the usage of the OpenAI SDK, as the original implementation does not support Azure out of the box.
 
 Go to this path:
-'''bash
+```bash
 open-operator/api/agent/route.ts
-'''
+```
 
 
 Inside this folder, you need to **replace** the original `route.ts` file with the version provided in this repository.
