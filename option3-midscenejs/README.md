@@ -83,4 +83,6 @@ Execute your custom AI-powered browser automation task using Midscene.js + Puppe
 
 ```bash
 npx tsx demo.ts
+```
+In your bash, when the task has been completed, you will see the total cost of the fee calculator.
 
