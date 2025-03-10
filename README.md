@@ -77,6 +77,13 @@ A complete summary of the tests, results, and comparisons can be found in the `r
 
 ---
 
+## ⚠️ IMPORTANT
+
+This project makes use of **existing open-source codebases**, which have been **modified and adapted** to fit the specific requirements of this task.  
+These modifications were necessary to ensure proper integration with the WIPO Fee Calculator and to meet the evaluation criteria established for this project.
+
+---
+
 ## Author
 *Víctor Iglesias González*  
 *10/03/2025*
