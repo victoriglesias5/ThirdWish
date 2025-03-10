@@ -40,8 +40,7 @@ In this repository, you will find the following three browser automation approac
 Each option folder includes:
 - Installation instructions.
 - How to configure and run the automation scripts.
-- Test cases with predefined input parameters.
-- Logs and performance results.
+- Test cases.
 
 ### Basic Requirements
 - Python 3.8+
