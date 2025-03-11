@@ -7,7 +7,7 @@ import { createAzure } from '@ai-sdk/azure';
 // Configuración del provider de Azure
 const azureProvider = createAzure({
   resourceName: process.env.AZURE_RESOURCE_NAME || "thirdwishgroup-ai",
-  apiKey: process.env.OPENAI_API_KEY || "e78c273f6f844dd2bb0f00fdba023b6a",
+  apiKey: process.env.OPENAI_API_KEY || "e78***",
   apiVersion: process.env.OPENAI_API_VERSION || "2024-08-01-preview",
 });
 
