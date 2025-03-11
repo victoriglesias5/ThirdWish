@@ -4,8 +4,8 @@ import gradio as gr
 from openai import AzureOpenAI
 
 # Configurar variables de entorno para Azure OpenAI
-os.environ["AZURE_OPENAI_API_KEY"] = "e78c273f6f844dd2bb0f00fdba023b6a"
-os.environ["AZURE_OPENAI_ENDPOINT"] = "https://thirdwishgroup-ai.openai.azure.com"
+os.environ["AZURE_OPENAI_API_KEY"] = "e78***"
+os.environ["AZURE_OPENAI_ENDPOINT"] = "https://***"
 os.environ["AZURE_OPENAI_API_VERSION"] = "2024-08-01-preview"
 
 # Inicializar el cliente de Azure OpenAI
@@ -15,7 +15,7 @@ client = AzureOpenAI(
     api_version=os.getenv("AZURE_OPENAI_API_VERSION")
 )
 
-# Ruta del repositorio de ReasonerAgent (ajusta según tu entorno)
+# Ruta del repositorio de ReasonerAgent
 REASONER_DIR = "/content/llm-reasoners/examples/ReasonerAgent-Web"
 
 def summarize_log(log: str, query: str) -> str:
@@ -42,7 +42,7 @@ def summarize_log(log: str, query: str) -> str:
     ]
     try:
         response = client.chat.completions.create(
-            model="gpt-4o",  # Asegúrate de que este sea el modelo o despliegue correcto en tu recurso Azure
+            model="gpt-4o",
             messages=messages,
             temperature=0.3,
             max_tokens=150
