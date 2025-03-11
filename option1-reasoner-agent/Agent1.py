@@ -3,12 +3,12 @@ import subprocess
 import gradio as gr
 
 # Configurar variables de entorno para Azure
-os.environ["AZURE_API_KEY"] = "e78c273f6f844dd2bb0f00fdba023b6a"
-os.environ["AZURE_API_BASE"] = "https://thirdwishgroup-ai.openai.azure.com"
+os.environ["AZURE_API_KEY"] = "e78***"
+os.environ["AZURE_API_BASE"] = "https:***"
 os.environ["AZURE_API_VERSION"] = "2024-08-01-preview"
 AZURE_API_KEY = os.environ["AZURE_API_KEY"]
 
-# Ruta del repositorio de ReasonerAgent (ajusta según tu entorno)
+# Ruta del repositorio de ReasonerAgent
 REASONER_DIR = "/content/llm-reasoners/examples/ReasonerAgent-Web"
 
 def run_reasoner_agent_stream(query: str, max_steps: int):
